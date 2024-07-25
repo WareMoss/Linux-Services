@@ -1,0 +1,11 @@
+[Unit]
+Description=AutoUpdate
+After=network.target
+Type=oneshot
+StandardOutput=journal
+StandardError=journal
+User=myserviceuser
+Group=myservicegroup
+
+[Install]
+WantedBy=multi-user.target
